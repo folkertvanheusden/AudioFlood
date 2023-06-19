@@ -18,11 +18,6 @@ target_link_libraries(AudioFlood Threads::Threads)
 
 include(FindPkgConfig)
 
-pkg_check_modules(SNDFILE REQUIRED sndfile)
-target_link_libraries(AudioFlood ${SNDFILE_LIBRARIES})
-target_include_directories(AudioFlood PUBLIC ${SNDFILE_INCLUDE_DIRS})
-target_compile_options(AudioFlood PUBLIC ${SNDFILE_CFLAGS_OTHER})
-
 # pipewire
 find_package(PipeWire)
 pkg_check_modules(PIPEWIRE libpipewire-0.3)

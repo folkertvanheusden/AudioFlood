@@ -7,5 +7,7 @@ It works as follows:
 - if it doesn't get overwritten by another client, that client wins
 - the server plays audio at 44.1kHz, 16 bit unsigned stereo
 
+This program is implemented for pipewire and requires libpipewire-0.3-dev.
+
 
 (c) 2019 by Folkert van Heusden <mail@vanheusden.com>
