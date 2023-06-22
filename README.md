@@ -1,6 +1,8 @@
 AudioFlood is like Pixelflut/Pixelflood for audio.
 
-The idea is that clients try make their audio sample to played as much as possible.
+The goal is to make sure your audio-packet is the one in the server-buffer as soon as playing starts.
+This requires timing and bandwidth.
+
 
 It works as follows:
 - the server waits for UDP packets and copy their contents (max 1500 bytes) into the play-buffer
@@ -10,4 +12,4 @@ It works as follows:
 This program is implemented for pipewire and requires libpipewire-0.3-dev.
 
 
-(c) 2019 by Folkert van Heusden <mail@vanheusden.com>
+(c) 2019-2023 by Folkert van Heusden <mail@vanheusden.com>
